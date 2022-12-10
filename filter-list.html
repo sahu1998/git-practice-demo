@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="filter-list.css">
+    <title>Document</title>
+</head>
+
+<body onload="showCompleteData()">
+    <div class="buttons" style="display: flex; flex-direction:row; justify-content: space-between;">
+        <div class="searchbar">
+            <img src="search-icon.jpg" alt="Search" id="searchicon">
+            <input type="text" id="search" name="search" oninput="searchData()" placeholder="search...">
+
+        </div>
+        <div><button id="addNewData" class="d-show" onclick="displayForm()">Add New Data</button></div>
+        <div id="newData" class="d-none">
+            <form onsubmit="addNewData(event)" style="margin: 0;">
+                <input type="text" id="name" class="new-data-field" placeholder="Enter Name">
+                <input type="email" id="email" class="new-data-field" placeholder="Enter Email">
+                <input type="text" id="mob"  class="new-data-field" placeholder="Enter Contact No">
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr id="heading">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="list"></tbody>
+        </table>
+    </div>
+</body>
+
+<script src="filter-list.js"></script>
+
+</html>
