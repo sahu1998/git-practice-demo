@@ -1,0 +1,91 @@
+body{
+    background-color: #ccc;
+    /* padding: 2%; */
+    border-radius: 4px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+    border-spacing: 0px;
+}
+
+th, td{
+    /* width: 50%; */
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+}
+#search{
+    width: 25%;
+    /* width: 100px; */
+    -webkit-transition: width .5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    font-size: 16px;
+    background-color: white;
+    /* padding: 12px 20px 12px 40px; */
+    padding-left: 15px;
+    /* transition: width 0.4s ease-in-out; */
+    /* justify-content: space-between; */
+}
+#search:focus {
+    width: 75%;
+  }
+.searchbar{
+    display: flex;
+    /* background-color: cadetblue; */
+    width: 25%;
+    border-radius: 8px;
+    flex-direction: row;
+    margin-left: 2%;
+}
+
+#heading{
+    background-color: coral;
+}
+#searchicon{
+    width: 9%;
+    border-radius: 30px; 
+    /* margin-top: 5px;  
+    margin-left: 26px; */
+}
+
+button{
+    background-color: #008CBA;
+    border-radius: 12px;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 1;
+}
+.d-none{
+    display: none;
+}
+.d-show:focus{
+    display: flex;
+}
+.new-data-field
+{
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    font-size: 16px;
+    background-color: white;
+    padding-left: 15px;
+    /* width: 25%; */
+}
+
+
+
+
