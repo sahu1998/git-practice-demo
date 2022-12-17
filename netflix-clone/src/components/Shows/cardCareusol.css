@@ -1,0 +1,73 @@
+.zoom {
+    padding: 50px;
+    /* background-color: green; */
+    transition: transform .2s;
+    /* width: 200px;
+    height: 200px; */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    /* IE 9 */
+    -ms-transform: scale(1.5);
+    /* Safari 3-8 */
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.item {
+    position: fixed;
+    margin: 2%;
+    padding: 30px;
+    overflow: hidden;
+    width: 500px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.item:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/* (A) WRAPPER */
+.hoverwrap {
+    position: relative; /* required for (c2) */
+    max-width: 500px;   /* optional */
+  }
+  
+  /* (B) RESPONSIVE IMAGE */
+  /* .hoverwrap img { width: 100%; } */
+  
+  /* (C) CAPTION */
+  .hovercap {
+    /* (C1) DIMENSIONS */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+   
+    /* (C2) PLACE AT BOTTOM */
+    position: absolute;
+    bottom: 0; left: 0;
+   
+    /* (C3) COLORS */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: white;
+  }
+  
+  /* (D) SHOW/HIDE */
+  .hovercap {
+    visibility: none; opacity: 0;
+    transition: opacity 0.3s;
+    left: 5%;
+    bottom: 20%;
+    text-shadow: 3px 3px 4px #000;
+    color: #fff;
+    line-height: 25px;
+    font-family: sans-serif;
+  }
+  .hoverwrap:hover .hovercap {
+    visibility: visible; opacity: 1;
+  }
